@@ -13,14 +13,15 @@ internal sealed partial class DadJokeExtensionPage : ListPage
     public DadJokeExtensionPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\StoreLogo.png");
-        Title = "I Want a Dad Joke";
+        Title = "I Can Haz Dad Joke";
         Name = "Open";
     }
 
     public override IListItem[] GetItems()
     {
         return [
-            new ListItem(new DadJokeFinalPage()) { Title = "Get a random dad joke in your command palette!" }
+            new ListItem(new DadJokeFinalPage()) { Title = "Get a random joke" },
+            new ListItem(new OpenUrlCommand("https://github.com/josiauh/IWantDadjoke/")) { Title = "This is not an official extension." }
         ];
     }
 }

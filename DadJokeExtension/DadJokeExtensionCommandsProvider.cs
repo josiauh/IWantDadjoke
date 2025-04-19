@@ -13,10 +13,10 @@ public partial class DadJokeExtensionCommandsProvider : CommandProvider
 
     public DadJokeExtensionCommandsProvider()
     {
-        DisplayName = "Give Me Dad Jokes";
+        DisplayName = "I Can Haz Dad Joke";
         Icon = IconHelpers.FromRelativePath("Assets\\StoreLogo.png");
         _commands = [
-            new CommandItem(new DadJokeExtensionPage()) { Title = DisplayName, Subtitle = "Best Dad Ever" },
+            new CommandItem(new DadJokeExtensionPage()) { Title = DisplayName, Subtitle = "Not affiliated with the icanhazdadjoke API." },
         ];
     }
 
